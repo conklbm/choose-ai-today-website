@@ -29,6 +29,16 @@ export async function writeSubmission(payload: SheetPayload): Promise<void> {
   if (!res.ok) {
     throw new Error(`Sheet webhook responded ${res.status}`);
   }
+
+  // Apps Script returns HTTP 200 even when the append fails (bad tab name,
+  // script error), so the body is the real success signal — without this a
+  // failed write would show the visitor a success message.
+  const result = await res.json().catch(() => null);
+  if (!result?.ok) {
+    throw new Error(
+      `Sheet webhook rejected the write: ${result?.error ?? "unrecognized response"}`
+    );
+  }
 }
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
