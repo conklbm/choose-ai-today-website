@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ABOUT } from "@/lib/copy";
 
 export default function About() {
@@ -13,13 +14,13 @@ export default function About() {
             key={p.name}
             className="rounded-2xl border border-ink/10 bg-white p-6 sm:p-8"
           >
-            {/* Placeholder avatar — swap for headshot <Image> when supplied */}
-            <div
-              aria-hidden
-              className="font-display flex h-16 w-16 items-center justify-center rounded-full bg-navy text-2xl font-bold text-white"
-            >
-              {p.initials}
-            </div>
+            <Image
+              src={p.photo}
+              alt={`${p.name}, ${p.role}`}
+              width={96}
+              height={96}
+              className="h-24 w-24 rounded-full object-cover object-top"
+            />
             <h3 className="font-display mt-4 text-xl font-bold">{p.name}</h3>
             <p className="text-sm font-medium text-cobalt">{p.role}</p>
             <p className="mt-3 leading-relaxed text-muted">{p.body}</p>

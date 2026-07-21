@@ -85,14 +85,14 @@ export const ABOUT = {
       role: AMBASSADOR_TITLE,
       body: "Anthropic Ambassador for Mobile and founder of Pim & Co., a boutique software consulting practice helping founders and enterprises build MVPs, AI-powered products, and full-scale software systems.",
       link: { label: "Pim & Co.", href: "https://pim-and-co.com" },
-      initials: "P",
+      photo: "/paul-lockett.jpg",
     },
     {
       name: "Brooks",
       role: "Founder, erase friction",
       body: "Founder of erase friction, where he helps teams kill busywork with custom software, workflow automation, and practical AI. 17 years building and scaling businesses.",
       link: { label: "erase friction", href: "https://erasefriction.com" },
-      initials: "B",
+      photo: "/brooks-conkle.jpg",
     },
   ],
 };

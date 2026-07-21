@@ -2,7 +2,17 @@
 
 Everything the code can't do for you. Work top to bottom.
 
-## 1. Google Sheet + Apps Script (forms don't save until this is done)
+## 1. Google Sheet + Apps Script — ✅ DONE (verified 2026-07-21)
+
+Web App deployed and `SHEET_WEBHOOK_URL` set in `.env.local`. Both forms were
+tested end-to-end against the live endpoint and rows landed in the correct
+tabs. **Delete the test rows** (named `TEST ROW …`) from both tabs before launch.
+
+Still to do: add the same `SHEET_WEBHOOK_URL` value to Vercel's environment
+variables when you set the project up (§3) — local and prod are separate.
+
+<details>
+<summary>Original setup steps (for reference / if you ever redeploy)</summary>
 
 1. Create a new Google Sheet named **Choose AI Today — Signups & Leads**.
    - Decide ownership first (PRD §8): it holds the JV's email list and leads.
@@ -24,6 +34,8 @@ Everything the code can't do for you. Work top to bottom.
 > Note: the endpoint is publicly reachable by design (Apps Script requirement).
 > It only appends rows and holds no secrets. If you ever redeploy the script,
 > the URL changes — update the env var.
+
+</details>
 
 ## 2. GA4
 
@@ -48,9 +60,9 @@ Everything the code can't do for you. Work top to bottom.
 - [ ] **Meetup platform URL** — once chosen (Luma / Meetup.com / Eventbrite),
       set `MEETUP_URL` in `lib/copy.ts`. The community success message will
       automatically show a "See upcoming meetups →" button.
-- [ ] **Headshots** — replace the initials avatars in `components/About.tsx`
-      with real photos (drop files in `public/`, swap the placeholder div for
-      a `next/image`).
+- [x] ~~**Headshots**~~ — done. `public/brooks-conkle.jpg` and
+      `public/paul-lockett.jpg`, rendered as circular avatars in the About
+      cards. To swap either, replace the file and keep the filename.
 - [ ] **Final copy sign-off** — all copy lives in `lib/copy.ts`.
 - [ ] **Contact email for footer** — add once the JV inbox exists
       (`FOOTER` in `lib/copy.ts` + mention it on the privacy page).
