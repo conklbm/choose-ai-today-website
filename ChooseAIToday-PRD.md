@@ -10,7 +10,7 @@
 
 ## 1. Summary
 
-A single-page marketing site for a joint venture between Brooks Conkle (erase friction) and Paul (Pim & Co.). The site positions the two as a partnership serving the Mobile, AL business community around practical AI. It has two jobs:
+A single-page marketing site for a joint venture between Brooks Conkle (Erase Friction) and Paul (Pim & Co.). The site positions the two as a partnership serving the Mobile, AL business community around practical AI. It has two jobs:
 
 1. **Primary:** Grow an email/community list of people interested in local AI meetups and connection.
 2. **Secondary:** Softly advertise AI consulting services and capture inbound leads.
@@ -112,7 +112,7 @@ Both form submissions write directly to a shared Google Sheet (two tabs) so the 
 > **Page-narrative note for dev:** The two goals are one funnel, not two. A business owner (or their employee) should feel they belong at the meetup — the meetup is top-of-funnel for consulting, not a separate audience. Sequence the page so it reads as a single story: *join the community (easy yes) → some businesses want to move faster → here's how we help*. The community and services sections should feel continuous, connected by the bridge line — avoid any visual or copy treatment that walls off "hobbyists" from "serious businesses."
 
 ### 5.5 About — the partnership
-- Two short bios: Brooks (erase friction) + Paul (Pim & Co., Anthropic Ambassador).
+- Two short bios: Brooks (Erase Friction) + Paul (Pim & Co., Anthropic Ambassador).
 - Links out to both agencies.
 - Photos (to be supplied).
 
@@ -127,7 +127,7 @@ Both form submissions write directly to a shared Google Sheet (two tabs) so the 
 
 ## 6. Draft copy (starting point — partners to review/edit)
 
-> Voice note for dev: keep it direct and outcome-first, matching erase friction's tone. Short sentences. No corporate fluff.
+> Voice note for dev: keep it direct and outcome-first, matching Erase Friction's tone. Short sentences. No corporate fluff.
 
 > **⚠️ BLOCKER — do not ship the "official Anthropic Ambassador" line until Paul confirms the exact approved wording.** It appears in the hero trust line and the About block. If the allowed phrasing differs, it changes in both places. Treat this as a gate, not an asset checkbox.
 
@@ -160,7 +160,7 @@ Both form submissions write directly to a shared Google Sheet (two tabs) so the 
 
 **Paul** — Anthropic Ambassador for Mobile and founder of Pim & Co., a boutique software consulting practice helping founders and enterprises build MVPs, AI-powered products, and full-scale software systems.
 
-**Brooks** — founder of erase friction, where he helps teams kill busywork with custom software, workflow automation, and practical AI. 17 years building and scaling businesses.
+**Brooks** — founder of Erase Friction, where he helps teams kill busywork with custom software, workflow automation, and practical AI. 17 years building and scaling businesses.
 
 ### Contact block
 **Heading:** Bring us your bottleneck.
@@ -168,7 +168,7 @@ Both form submissions write directly to a shared Google Sheet (two tabs) so the 
 **Button:** Send it →
 
 ### Footer
-Choose AI Today · Mobile, Alabama · [erase friction] · [Pim & Co.]
+Choose AI Today · Mobile, Alabama · [Erase Friction] · [Pim & Co.]
 
 ---
 

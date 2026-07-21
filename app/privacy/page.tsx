@@ -30,7 +30,7 @@ export default function PrivacyPage() {
           <section>
             <h2>Who we are</h2>
             <p>
-              Choose AI Today is a partnership between erase friction and Pim
+              Choose AI Today is a partnership between Erase Friction and Pim
               &amp; Co., serving the Mobile, Alabama business community. You can
               reach us through the contact form on our homepage.
             </p>

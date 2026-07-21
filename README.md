@@ -1,6 +1,6 @@
 # ChooseAIToday.com
 
-Single-page marketing site for the Choose AI Today partnership (erase friction
+Single-page marketing site for the Choose AI Today partnership (Erase Friction
 × Pim & Co.) serving the Mobile, AL business community. Grows a community
 email list (primary) and captures consulting leads (secondary), both into a
 shared Google Sheet.

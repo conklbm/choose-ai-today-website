@@ -19,7 +19,7 @@ export default function About() {
               alt={`${p.name}, ${p.role}`}
               width={96}
               height={96}
-              className="h-24 w-24 rounded-full object-cover object-top"
+              className="h-24 w-24 rounded-full object-cover"
             />
             <h3 className="font-display mt-4 text-xl font-bold">{p.name}</h3>
             <p className="text-sm font-medium text-cobalt">{p.role}</p>

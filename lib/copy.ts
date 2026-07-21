@@ -89,9 +89,9 @@ export const ABOUT = {
     },
     {
       name: "Brooks",
-      role: "Founder, erase friction",
-      body: "Founder of erase friction, where he helps teams kill busywork with custom software, workflow automation, and practical AI. 17 years building and scaling businesses.",
-      link: { label: "erase friction", href: "https://erasefriction.com" },
+      role: "Founder, Erase Friction",
+      body: "Founder of Erase Friction, where he helps teams kill busywork with custom software, workflow automation, and practical AI. 17 years building and scaling businesses.",
+      link: { label: "Erase Friction", href: "https://erasefriction.com" },
       photo: "/brooks-conkle.jpg",
     },
   ],
@@ -114,7 +114,7 @@ export const CONTACT = {
 
 export const FOOTER = {
   links: [
-    { label: "erase friction", href: "https://erasefriction.com" },
+    { label: "Erase Friction", href: "https://erasefriction.com" },
     { label: "Pim & Co.", href: "https://pim-and-co.com" },
     { label: "Privacy", href: "/privacy" },
   ],
