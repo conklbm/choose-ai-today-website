@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm light base (erase friction wheelhouse) */
+  --color-cream: #f7f5f0;
+  --color-ink: #1a1a1a;
+  --color-muted: #5f6672;
+
+  /* Dark navy (Pim & Co. wheelhouse) — hero + footer */
+  --color-navy: #0b111e;
+  --color-navy-light: #121a2e;
+  --color-slate-soft: #8996a9;
+
+  /* Accent — its own brand, distinct from either agency */
+  --color-cobalt: #2456e6;
+  --color-cobalt-deep: #1a41b8;
+}
+
+/* Fonts reference next/font CSS variables, so they must be inlined */
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), var(--font-inter), ui-sans-serif, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset anchored sections below the sticky nav */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
