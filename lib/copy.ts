@@ -96,6 +96,24 @@ export const ABOUT = {
   ],
 };
 
+export const OTHER_MEETUPS = {
+  heading: "More AI around the Bay",
+  body: "We're not the only ones. If you want more reps between our meetups, these folks are worth your time.",
+  groups: [
+    {
+      name: "Lower Alabama AI (LAAI)",
+      schedule: "1st Friday in Fairhope · last Friday of the month in Mobile",
+      links: [
+        {
+          label: "Join on Meetup →",
+          href: "https://www.meetup.com/lower-alabama-ai-meetup/",
+        },
+        { label: "Discord →", href: "https://discord.gg/a57wzV3jTE" },
+      ],
+    },
+  ],
+};
+
 export const CONTACT = {
   heading: "Bring us your bottleneck.",
   body: "Tell us what you're trying to do with AI. We'll come back with a real, useful response — no pitch.",

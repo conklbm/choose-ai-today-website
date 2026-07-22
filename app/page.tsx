@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import CommunitySignup from "@/components/CommunitySignup";
 import Services from "@/components/Services";
 import About from "@/components/About";
+import OtherMeetups from "@/components/OtherMeetups";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import { SITE } from "@/lib/copy";
@@ -30,6 +31,7 @@ export default function Home() {
         <CommunitySignup />
         <Services />
         <About />
+        <OtherMeetups />
         <ContactForm />
       </main>
       <Footer />
