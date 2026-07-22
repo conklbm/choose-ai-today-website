@@ -57,6 +57,16 @@ export default function CommunitySignup() {
             <h2 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
               {COMMUNITY.heading}
             </h2>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {COMMUNITY.facts.map((f) => (
+                <li
+                  key={f}
+                  className="rounded-full border border-accent/30 bg-accent/5 px-3.5 py-1 text-sm font-semibold text-accent"
+                >
+                  {f}
+                </li>
+              ))}
+            </ul>
             <p className="mt-4 leading-relaxed text-muted">{COMMUNITY.body}</p>
 
             <form onSubmit={onSubmit} className="mt-8 space-y-4">

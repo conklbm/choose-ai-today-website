@@ -12,8 +12,9 @@ export const SITE = {
   name: "Choose AI Today",
   domain: "https://chooseaitoday.com",
   city: "Mobile, Alabama",
+  area: "Mobile Bay Area, Alabama",
   description:
-    "A local community for founders, teams, and the curious learning practical AI in Mobile, AL — plus hands-on help when your business is ready to put AI to work.",
+    "A local community for founders, teams, and the curious learning practical AI across the Mobile Bay Area — plus hands-on help when your business is ready to put AI to work.",
 };
 
 export const NAV = {
@@ -26,6 +27,7 @@ export const NAV = {
 };
 
 export const HERO = {
+  eyebrow: "Mobile Bay Area, Alabama",
   headline: "AI is now a non-negotiable.",
   subhead:
     "A local community for founders, teams, and the curious — plus hands-on help when your business is ready to put AI to work. Come to a meetup. Bring your team.",
@@ -34,6 +36,7 @@ export const HERO = {
 
 export const COMMUNITY = {
   heading: "You belong here.",
+  facts: ["Monthly", "In person", "Free"],
   body: "Whether you're just AI-curious or running a company that needs to move faster, this is where Mobile figures it out together — meetups, connections, and a short note now and then on using AI in the real world.",
   button: "Get meetup invites + AI notes →",
   consent:
@@ -83,7 +86,7 @@ export const ABOUT = {
     {
       name: "Paul",
       role: "Founder, Pim & Co.",
-      body: "Anthropic Ambassador for Mobile and founder of Pim & Co., a boutique software consulting practice helping founders and enterprises build MVPs, AI-powered products, and full-scale software systems.",
+      body: "Anthropic Ambassador for Mobile and founder of Pim & Co., a boutique software consulting practice helping founders and enterprises build MVPs, AI-powered products, and full-scale software systems. Full-stack engineer with experience spanning Google, Flexport, and multiple early-stage startups.",
       link: { label: "Pim & Co.", href: "https://pim-and-co.com" },
       photo: "/paul-lockett.jpg",
     },
@@ -117,11 +120,12 @@ export const OTHER_MEETUPS = {
 
 export const CONTACT = {
   heading: "Bring us your bottleneck.",
-  body: "Tell us what you're trying to do with AI. We'll come back with a real, useful response — no pitch.",
+  body: "Tell us what you're trying to do with AI. We'll come back within 48 hours with a real, useful response — no pitch.",
   button: "Send it →",
+  note: "Answers arrive by email — no call required.",
   success: {
     heading: "Got it.",
-    body: "We'll come back with a real, useful response.",
+    body: "A real, useful response is on its way — within 48 hours.",
   },
   timelineOptions: [
     "Ready now — let's talk",

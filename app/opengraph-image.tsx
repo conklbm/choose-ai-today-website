@@ -41,7 +41,7 @@ export default function OgImage() {
               strokeLinejoin="round"
             />
           </svg>
-          Choose AI Today · Mobile, Alabama
+          {SITE.name} · {SITE.area}
         </div>
         <div
           style={{

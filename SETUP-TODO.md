@@ -65,6 +65,10 @@ variables when you set the project up (§3) — local and prod are separate.
 - [ ] **Meetup platform URL** — once chosen (Luma / Meetup.com / Eventbrite),
       set `MEETUP_URL` in `lib/copy.ts`. The community success message will
       automatically show a "See upcoming meetups →" button.
+- [ ] **First meetup photo** — Brooks has a photo from a recent event Paul
+      led. Drop it in `public/` (any filename) and tell Claude — it gets
+      optimized and wired into the community section as the first piece of
+      social proof. After meetup #1, replace with our own room.
 - [x] ~~**Headshots**~~ — done. `public/brooks-conkle.jpg` and
       `public/paul-lockett.jpg`, rendered as circular avatars in the About
       cards. To swap either, replace the file and keep the filename.

@@ -31,8 +31,8 @@ export default function Home() {
         <CommunitySignup />
         <Services />
         <About />
-        <OtherMeetups />
         <ContactForm />
+        <OtherMeetups />
       </main>
       <Footer />
     </>

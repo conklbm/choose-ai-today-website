@@ -176,6 +176,10 @@ export default function ContactForm() {
                 >
                   {status === "submitting" ? "Sending…" : CONTACT.button}
                 </button>
+
+                <p className="text-center text-xs text-slate-soft">
+                  {CONTACT.note}
+                </p>
               </form>
             </>
           )}
