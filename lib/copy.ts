@@ -29,13 +29,13 @@ export const HERO = {
   headline: "AI is now a non-negotiable.",
   subhead:
     "A local community for founders, teams, and the curious — plus hands-on help when your business is ready to put AI to work. Come to a meetup. Bring your team.",
-  cta: "Get local AI meetup invites + practical AI notes →",
+  cta: "Get meetup invites + AI notes →",
 };
 
 export const COMMUNITY = {
   heading: "You belong here.",
   body: "Whether you're just AI-curious or running a company that needs to move faster, this is where Mobile figures it out together — meetups, connections, and a short note now and then on using AI in the real world.",
-  button: "Get local AI meetup invites + practical AI notes →",
+  button: "Get meetup invites + AI notes →",
   consent:
     "We'll only email you about meetups and practical AI. Unsubscribe anytime.",
   success: {
