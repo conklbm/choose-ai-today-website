@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { NAV, SITE } from "@/lib/copy";
+import LogoMark from "./LogoMark";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -15,8 +16,9 @@ export default function Nav() {
       >
         <Link
           href="/"
-          className="font-display text-lg font-extrabold tracking-tight"
+          className="font-display flex items-center gap-2 text-lg font-extrabold tracking-tight"
         >
+          <LogoMark className="h-7 w-7" />
           {SITE.name}
         </Link>
 
@@ -32,7 +34,7 @@ export default function Nav() {
           ))}
           <a
             href="#community"
-            className="rounded-lg bg-cobalt px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-cobalt-deep"
+            className="rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-deep"
           >
             {NAV.cta}
           </a>
@@ -78,7 +80,7 @@ export default function Nav() {
           <a
             href="#community"
             onClick={() => setOpen(false)}
-            className="mt-2 block rounded-lg bg-cobalt px-4 py-3 text-center text-base font-semibold text-white"
+            className="mt-2 block rounded-lg bg-accent px-4 py-3 text-center text-base font-semibold text-white"
           >
             {NAV.cta}
           </a>

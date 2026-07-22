@@ -46,7 +46,7 @@ export default function CommunitySignup() {
             {MEETUP_URL && (
               <a
                 href={MEETUP_URL}
-                className="mt-6 inline-block rounded-lg bg-cobalt px-6 py-3 font-semibold text-white transition-colors hover:bg-cobalt-deep"
+                className="mt-6 inline-block rounded-lg bg-accent px-6 py-3 font-semibold text-white transition-colors hover:bg-accent-deep"
               >
                 {COMMUNITY.success.meetupLinkLabel}
               </a>
@@ -86,7 +86,7 @@ export default function CommunitySignup() {
                     name="name"
                     required
                     autoComplete="name"
-                    className="w-full rounded-lg border border-ink/20 bg-cream px-4 py-3 outline-none transition-colors focus:border-cobalt focus:ring-2 focus:ring-cobalt/20"
+                    className="w-full rounded-lg border border-ink/20 bg-cream px-4 py-3 outline-none transition-colors focus:border-accent focus:ring-2 focus:ring-accent/20"
                   />
                 </div>
                 <div>
@@ -102,7 +102,7 @@ export default function CommunitySignup() {
                     name="email"
                     required
                     autoComplete="email"
-                    className="w-full rounded-lg border border-ink/20 bg-cream px-4 py-3 outline-none transition-colors focus:border-cobalt focus:ring-2 focus:ring-cobalt/20"
+                    className="w-full rounded-lg border border-ink/20 bg-cream px-4 py-3 outline-none transition-colors focus:border-accent focus:ring-2 focus:ring-accent/20"
                   />
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function CommunitySignup() {
               <button
                 type="submit"
                 disabled={status === "submitting"}
-                className="w-full rounded-lg bg-cobalt px-6 py-3.5 font-semibold text-white transition-colors hover:bg-cobalt-deep disabled:opacity-60"
+                className="w-full rounded-lg bg-accent px-6 py-3.5 font-semibold text-white transition-colors hover:bg-accent-deep disabled:opacity-60"
               >
                 {status === "submitting" ? "Joining…" : COMMUNITY.button}
               </button>

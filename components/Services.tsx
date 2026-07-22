@@ -5,7 +5,7 @@ export default function Services() {
     <section id="services" className="bg-white">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
         {/* Bridge line — carries the funnel from community to services */}
-        <p className="mx-auto max-w-2xl border-l-4 border-cobalt pl-5 text-lg font-medium leading-relaxed text-ink sm:text-xl">
+        <p className="mx-auto max-w-2xl border-l-4 border-accent pl-5 text-lg font-medium leading-relaxed text-ink sm:text-xl">
           {BRIDGE}
         </p>
 
@@ -29,14 +29,14 @@ export default function Services() {
           {SERVICES.softCta.lead}{" "}
           <a
             href="#community"
-            className="font-semibold text-cobalt underline-offset-4 hover:underline"
+            className="font-semibold text-accent underline-offset-4 hover:underline"
           >
             {SERVICES.softCta.community}
           </a>
           ,{" "}
           <a
             href="#contact"
-            className="font-semibold text-cobalt underline-offset-4 hover:underline"
+            className="font-semibold text-accent underline-offset-4 hover:underline"
           >
             {SERVICES.softCta.contact}
           </a>

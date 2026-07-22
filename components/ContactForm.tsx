@@ -7,7 +7,7 @@ import { trackConversion } from "@/lib/analytics";
 type Status = "idle" | "submitting" | "success" | "error";
 
 const inputClass =
-  "w-full rounded-lg border border-white/20 bg-navy-light px-4 py-3 text-white outline-none transition-colors placeholder:text-slate-soft focus:border-cobalt focus:ring-2 focus:ring-cobalt/30";
+  "w-full rounded-lg border border-white/20 bg-navy-light px-4 py-3 text-white outline-none transition-colors placeholder:text-slate-soft focus:border-accent focus:ring-2 focus:ring-accent/30";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -172,7 +172,7 @@ export default function ContactForm() {
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="w-full rounded-lg bg-cobalt px-6 py-3.5 font-semibold text-white transition-colors hover:bg-cobalt-deep disabled:opacity-60"
+                  className="w-full rounded-lg bg-accent px-6 py-3.5 font-semibold text-white transition-colors hover:bg-accent-deep disabled:opacity-60"
                 >
                   {status === "submitting" ? "Sending…" : CONTACT.button}
                 </button>

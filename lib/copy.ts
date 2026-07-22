@@ -3,7 +3,6 @@
 // ⚠️ BLOCKER (PRD §6): confirm exact approved wording with Paul before launch.
 // Used in the hero trust line and the About block. Edit here, changes both.
 export const AMBASSADOR_LINE = "Led by the official Anthropic Ambassador for Mobile, AL.";
-export const AMBASSADOR_TITLE = "Anthropic Ambassador for Mobile";
 
 // Meetup platform URL — TBD (Luma / Meetup.com / Eventbrite). When chosen,
 // set this and the community success state will link to it.
@@ -82,7 +81,7 @@ export const ABOUT = {
   partners: [
     {
       name: "Paul",
-      role: AMBASSADOR_TITLE,
+      role: "Founder, Pim & Co.",
       body: "Anthropic Ambassador for Mobile and founder of Pim & Co., a boutique software consulting practice helping founders and enterprises build MVPs, AI-powered products, and full-scale software systems.",
       link: { label: "Pim & Co.", href: "https://pim-and-co.com" },
       photo: "/paul-lockett.jpg",

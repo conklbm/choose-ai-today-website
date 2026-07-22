@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FOOTER, SITE } from "@/lib/copy";
+import LogoMark from "./LogoMark";
 
 export default function Footer() {
   return (
@@ -7,8 +8,9 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-10 text-sm sm:flex-row sm:justify-between sm:px-6">
         <Link
           href="/"
-          className="font-display font-bold text-white transition-colors hover:text-slate-soft"
+          className="font-display flex items-center gap-2 font-bold text-white transition-colors hover:text-slate-soft"
         >
+          <LogoMark className="h-6 w-6" />
           {SITE.name}
         </Link>
         <p>

@@ -12,14 +12,14 @@ export default function Hero() {
         </p>
         <a
           href="#community"
-          className="mt-8 inline-block rounded-lg bg-cobalt px-6 py-3.5 text-base font-semibold text-white transition-colors hover:bg-cobalt-deep"
+          className="mt-8 inline-block rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-white transition-colors hover:bg-accent-deep"
         >
           {HERO.cta}
         </a>
         <p className="mt-6 flex items-center gap-2 text-sm text-slate-soft">
           <span
             aria-hidden
-            className="inline-block h-2 w-2 rounded-full bg-cobalt"
+            className="inline-block h-2 w-2 rounded-full bg-accent-bright"
           />
           {AMBASSADOR_LINE}
         </p>

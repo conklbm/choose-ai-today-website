@@ -11,9 +11,11 @@
   --color-navy-light: #121a2e;
   --color-slate-soft: #8996a9;
 
-  /* Accent — its own brand, distinct from either agency */
-  --color-cobalt: #2456e6;
-  --color-cobalt-deep: #1a41b8;
+  /* Accent — burnt orange: warm, human, classic with navy, distinctly
+     not the purple/blue AI cliché and not Erase Friction's teal */
+  --color-accent: #c2410c;
+  --color-accent-deep: #9a3412;
+  --color-accent-bright: #ea580c; /* small decorative marks on navy only */
 }
 
 /* Fonts reference next/font CSS variables, so they must be inlined */

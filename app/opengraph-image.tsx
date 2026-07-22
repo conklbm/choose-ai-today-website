@@ -29,14 +29,17 @@ export default function OgImage() {
             color: "#8996a9",
           }}
         >
-          <div
-            style={{
-              width: 20,
-              height: 20,
-              borderRadius: "50%",
-              backgroundColor: "#2456e6",
-            }}
-          />
+          <svg width="36" height="36" viewBox="0 0 64 64">
+            <rect width="64" height="64" rx="14" fill="#c2410c" />
+            <path
+              d="M18 34l10 10 18-21"
+              fill="none"
+              stroke="#ffffff"
+              strokeWidth="7"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
           Choose AI Today · Mobile, Alabama
         </div>
         <div
