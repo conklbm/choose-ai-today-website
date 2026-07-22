@@ -50,12 +50,23 @@ variables when you set the project up (§3) — local and prod are separate.
       (Admin → Events) once they've fired at least once — they fire
       automatically on form success and will appear in the events list.
 
-## 3. Vercel + domain
+## 3. Vercel + domain — ✅ deployed (www.chooseaitoday.com live 2026-07-22)
+
+- [ ] **BLOCKING: add env vars in Vercel** (Settings → Environment Variables),
+      then redeploy — until then, production forms fail with a 500 and GA4
+      does not load:
+      - `SHEET_WEBHOOK_URL` = the Apps Script `/exec` URL (copy from `.env.local`)
+      - `NEXT_PUBLIC_GA_MEASUREMENT_ID` = `G-8CH585QDC5`
+
+<details>
+<summary>Original setup steps</summary>
 
 1. Import the GitHub repo (`conklbm/choose-ai-today-website`) into Vercel.
 2. Add both env vars (above) before or right after first deploy.
 3. Add custom domain `chooseaitoday.com` (+ `www` redirect) → follow Vercel's
    DNS instructions at your registrar. SSL is automatic.
+
+</details>
 
 ## 4. Launch blockers (PRD §6/§7)
 
