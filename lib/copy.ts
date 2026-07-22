@@ -99,7 +99,7 @@ export const ABOUT = {
 
 export const OTHER_MEETUPS = {
   heading: "More AI around the Bay",
-  body: "We're not the only ones. If you want more reps between our meetups, these folks are worth your time.",
+  body: "We're not the only ones. These groups are worth your time too.",
   groups: [
     {
       name: "Lower Alabama AI (LAAI)",
