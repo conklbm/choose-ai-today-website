@@ -76,7 +76,7 @@ export const SERVICES = {
 };
 
 export const ABOUT = {
-  heading: "Two locals, one mission: help Mobile use AI well.",
+  heading: "Two locals, one mission: increase positive AI usage in our community.",
   partners: [
     {
       name: "Paul",
