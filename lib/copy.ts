@@ -37,6 +37,13 @@ export const HERO = {
 export const COMMUNITY = {
   heading: "You belong here.",
   facts: ["Monthly", "In person", "Free"],
+  photo: {
+    src: "/ai-meetup.jpg",
+    width: 1231,
+    height: 754,
+    alt: "A full room at a recent AI meetup in Mobile, with Paul presenting",
+    caption: "Paul leading a recent AI meetup in Mobile.",
+  },
   body: "Whether you're just AI-curious or running a company that needs to move faster, this is where Mobile figures it out together — meetups, connections, and a short note now and then on using AI in the real world.",
   button: "Get meetup invites + AI notes →",
   consent:
