@@ -25,22 +25,20 @@ export default function Services() {
           ))}
         </div>
 
-        <p className="mt-10 text-lg">
-          {SERVICES.softCta.lead}{" "}
-          <a
-            href="#community"
-            className="font-semibold text-accent underline-offset-4 hover:underline"
-          >
-            {SERVICES.softCta.community}
-          </a>
-          ,{" "}
-          <a
-            href="#contact"
-            className="font-semibold text-accent underline-offset-4 hover:underline"
-          >
-            {SERVICES.softCta.contact}
-          </a>
-        </p>
+        <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+          <p className="text-lg font-medium">{SERVICES.softCta.lead}</p>
+          <div className="flex flex-wrap gap-3">
+            {SERVICES.softCta.actions.map((a) => (
+              <a
+                key={a.href}
+                href={a.href}
+                className="rounded-lg border-2 border-accent px-5 py-2.5 font-semibold text-accent transition-colors hover:bg-accent hover:text-white"
+              >
+                {a.label}
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

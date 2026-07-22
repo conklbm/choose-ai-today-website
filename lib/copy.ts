@@ -70,8 +70,10 @@ export const SERVICES = {
   ],
   softCta: {
     lead: "Not sure where to start?",
-    community: "Come to a meetup first",
-    contact: "or tell us your situation →",
+    actions: [
+      { label: "Come to a meetup first →", href: "#community" },
+      { label: "Tell us your situation →", href: "#contact" },
+    ],
   },
 };
 
