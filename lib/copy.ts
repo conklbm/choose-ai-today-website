@@ -129,7 +129,7 @@ export const CONTACT = {
   heading: "Bring us your bottleneck.",
   body: "Tell us what you're trying to do with AI. We'll come back within 48 hours with a real, useful response — no pitch.",
   button: "Send it →",
-  note: "We'll send an initial analysis via email — no call required.",
+  note: "We'll send initial analysis via email — no call required.",
   success: {
     heading: "Got it.",
     body: "A real, useful response is on its way — within 48 hours.",
