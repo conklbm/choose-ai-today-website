@@ -14,7 +14,7 @@ export default function Footer() {
           {SITE.name}
         </Link>
         <p>
-          © {new Date().getFullYear()} {SITE.name} · {SITE.city}
+          © {new Date().getFullYear()} {SITE.name}
         </p>
         <div className="flex gap-5">
           {FOOTER.links.map((l) =>

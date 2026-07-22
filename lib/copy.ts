@@ -130,9 +130,5 @@ export const CONTACT = {
 };
 
 export const FOOTER = {
-  links: [
-    { label: "Erase Friction", href: "https://erasefriction.com" },
-    { label: "Pim & Co.", href: "https://pim-and-co.com" },
-    { label: "Privacy", href: "/privacy" },
-  ],
+  links: [{ label: "Privacy", href: "/privacy" }],
 };
