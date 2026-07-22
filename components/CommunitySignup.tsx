@@ -37,22 +37,7 @@ export default function CommunitySignup() {
 
   return (
     <section id="community" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
-      <div className="mx-auto max-w-2xl">
-        <figure>
-          <Image
-            src={COMMUNITY.photo.src}
-            alt={COMMUNITY.photo.alt}
-            width={COMMUNITY.photo.width}
-            height={COMMUNITY.photo.height}
-            sizes="(max-width: 704px) 100vw, 672px"
-            className="w-full rounded-2xl border border-ink/10 object-cover"
-          />
-          <figcaption className="mt-2 text-center text-xs text-muted">
-            {COMMUNITY.photo.caption}
-          </figcaption>
-        </figure>
-      </div>
-      <div className="mx-auto mt-6 max-w-2xl rounded-2xl border border-ink/10 bg-white p-6 shadow-sm sm:p-10">
+      <div className="mx-auto max-w-2xl rounded-2xl border border-ink/10 bg-white p-6 shadow-sm sm:p-10">
         {status === "success" ? (
           <div role="status" className="text-center">
             <h2 className="font-display text-3xl font-extrabold tracking-tight">
@@ -154,6 +139,20 @@ export default function CommunitySignup() {
           </>
         )}
       </div>
+
+      <figure className="mx-auto mt-6 max-w-2xl">
+        <Image
+          src={COMMUNITY.photo.src}
+          alt={COMMUNITY.photo.alt}
+          width={COMMUNITY.photo.width}
+          height={COMMUNITY.photo.height}
+          sizes="(max-width: 704px) 100vw, 672px"
+          className="w-full rounded-2xl border border-ink/10 object-cover"
+        />
+        <figcaption className="mt-2 text-center text-xs text-muted">
+          {COMMUNITY.photo.caption}
+        </figcaption>
+      </figure>
     </section>
   );
 }
