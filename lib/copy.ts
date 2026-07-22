@@ -46,8 +46,7 @@ export const COMMUNITY = {
   },
   body: "Whether you're just AI-curious or running a company that needs to move faster, this is where Mobile figures it out together — meetups, connections, and a short note now and then on using AI in the real world.",
   button: "Get meetup invites + AI notes →",
-  consent:
-    "We'll only email you about meetups and practical AI. Unsubscribe anytime.",
+  consent: "We'll only email you about meetups and practical AI.",
   success: {
     heading: "You're in.",
     body: "Watch your inbox for the next meetup invite.",
