@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
+import { HERO, SITE } from "@/lib/copy";
 
-export const alt = "Choose AI Today — Mobile is learning AI together";
+export const alt = `${SITE.name} — ${HERO.headline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -51,7 +52,7 @@ export default function OgImage() {
             letterSpacing: "-0.02em",
           }}
         >
-          Mobile is learning AI together.
+          {HERO.headline}
         </div>
         <div style={{ marginTop: 32, fontSize: 34, color: "#8996a9" }}>
           Meetups, community, and practical AI help for local businesses.

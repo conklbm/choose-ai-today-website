@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: SITE.description,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Choose AI Today — Mobile is learning AI together",
+    title: "Choose AI Today — AI is now a non-negotiable",
     description: SITE.description,
     url: SITE.domain,
     siteName: SITE.name,
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Choose AI Today — Mobile is learning AI together",
+    title: "Choose AI Today — AI is now a non-negotiable",
     description: SITE.description,
   },
 };

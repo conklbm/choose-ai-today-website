@@ -27,7 +27,7 @@ export const NAV = {
 };
 
 export const HERO = {
-  headline: "Mobile is learning AI together.",
+  headline: "AI is now a non-negotiable.",
   subhead:
     "A local community for founders, teams, and the curious — plus hands-on help when your business is ready to put AI to work. Come to a meetup. Bring your team.",
   cta: "Get local AI meetup invites + practical AI notes →",
