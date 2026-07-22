@@ -55,7 +55,7 @@ export const COMMUNITY = {
 };
 
 export const BRIDGE =
-  "Some businesses want to move faster than a monthly meetup allows. We can get hands-on to help your company move faster.";
+  "Some businesses want to move faster than a monthly meetup allows. We can get hands-on to help your company speed up adoption.";
 
 export const SERVICES = {
   heading: "When you're ready to go further",
