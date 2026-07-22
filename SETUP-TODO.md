@@ -50,13 +50,10 @@ variables when you set the project up (§3) — local and prod are separate.
       (Admin → Events) once they've fired at least once — they fire
       automatically on form success and will appear in the events list.
 
-## 3. Vercel + domain — ✅ deployed (www.chooseaitoday.com live 2026-07-22)
+## 3. Vercel + domain — ✅ DONE (verified 2026-07-22)
 
-- [ ] **BLOCKING: add env vars in Vercel** (Settings → Environment Variables),
-      then redeploy — until then, production forms fail with a 500 and GA4
-      does not load:
-      - `SHEET_WEBHOOK_URL` = the Apps Script `/exec` URL (copy from `.env.local`)
-      - `NEXT_PUBLIC_GA_MEASUREMENT_ID` = `G-8CH585QDC5`
+Live at www.chooseaitoday.com. Both env vars set in Vercel; both forms
+verified writing rows from production, GA4 tag confirmed loading.
 
 <details>
 <summary>Original setup steps</summary>
