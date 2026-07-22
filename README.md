@@ -28,4 +28,5 @@ npm run dev
 | Form destination (swappable: Sheet → ESP) | `lib/sheets.ts` |
 | API routes | `app/api/community`, `app/api/lead` |
 | Apps Script to paste into the Sheet | `google-apps-script/Code.gs` |
+| How the webhook works + redeploy gotcha | `docs/APPS-SCRIPT-WEBHOOK.md` |
 | GA4 conversion events | `lib/analytics.ts` |

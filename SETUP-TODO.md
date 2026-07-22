@@ -11,6 +11,11 @@ tabs. **Delete the test rows** (named `TEST ROW …`) from both tabs before laun
 Still to do: add the same `SHEET_WEBHOOK_URL` value to Vercel's environment
 variables when you set the project up (§3) — local and prod are separate.
 
+> ⚠️ **If you ever redeploy the Apps Script, its URL changes** and forms go
+> silently dead until you update `SHEET_WEBHOOK_URL` in both `.env.local` and
+> Vercel. See [docs/APPS-SCRIPT-WEBHOOK.md](docs/APPS-SCRIPT-WEBHOOK.md) — it
+> also shows how to publish edits *without* changing the URL.
+
 <details>
 <summary>Original setup steps (for reference / if you ever redeploy)</summary>
 
