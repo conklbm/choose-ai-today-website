@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
     const ip = req.headers.get("x-forwarded-for")?.split(",")[0] ?? "unknown";
     if (isRateLimited(ip)) {
       return NextResponse.json(
-        { error: "Too many requests" },
+        { error: "Lots of submissions at once — wait a minute and try again." },
         { status: 429 }
       );
     }

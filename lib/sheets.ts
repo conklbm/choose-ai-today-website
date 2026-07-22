@@ -51,7 +51,7 @@ export function isValidEmail(email: string): boolean {
 // cold start, which is fine — this only needs to blunt naive bots. (PRD §4)
 const hits = new Map<string, { count: number; windowStart: number }>();
 const WINDOW_MS = 60_000;
-const MAX_PER_WINDOW = 5;
+const MAX_PER_WINDOW = 10;
 
 export function isRateLimited(ip: string): boolean {
   const now = Date.now();
