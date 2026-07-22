@@ -42,13 +42,13 @@ variables when you set the project up (§3) — local and prod are separate.
 
 </details>
 
-## 2. GA4
+## 2. GA4 — property created, ID = `G-8CH585QDC5`
 
-1. Create a GA4 property for chooseaitoday.com → copy the Measurement ID (`G-…`).
-2. Set `NEXT_PUBLIC_GA_MEASUREMENT_ID` in Vercel env vars (and `.env.local`).
-3. Conversion events fire automatically on form success:
-   `community_signup` and `lead_submit`. Mark both as key events in GA4
-   (Admin → Events) so they show as conversions.
+- [x] Property created; ID set in `.env.local` and verified loading (2026-07-22).
+- [ ] Set `NEXT_PUBLIC_GA_MEASUREMENT_ID=G-8CH585QDC5` in Vercel env vars too.
+- [ ] Mark `community_signup` and `lead_submit` as key events in GA4
+      (Admin → Events) once they've fired at least once — they fire
+      automatically on form success and will appear in the events list.
 
 ## 3. Vercel + domain
 
