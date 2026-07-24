@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FOOTER, SITE } from "@/lib/copy";
 import LogoMark from "./LogoMark";
 import HomeLink from "./HomeLink";
+import Year from "./Year";
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
           {SITE.name}
         </HomeLink>
         <p>
-          © {new Date().getFullYear()} {SITE.name}
+          © <Year /> {SITE.name}
         </p>
         <div className="flex gap-5">
           {FOOTER.links.map((l) =>
