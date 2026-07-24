@@ -19,10 +19,10 @@ export default function Hero() {
         >
           {HERO.cta}
         </a>
-        <p className="mt-6 flex items-center gap-2 text-sm text-slate-soft">
+        <p className="mt-6 flex items-center gap-2 text-sm italic text-slate-soft">
           <span
             aria-hidden
-            className="inline-block h-2 w-2 rounded-full bg-accent-bright"
+            className="inline-block h-2 w-2 rounded-full bg-accent-bright motion-safe:animate-pulse"
           />
           {AMBASSADOR_LINE}
         </p>
