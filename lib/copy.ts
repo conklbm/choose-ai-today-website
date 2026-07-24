@@ -45,7 +45,7 @@ export const COMMUNITY = {
     caption: "Paul leading a recent AI meetup in Mobile.",
   },
   body: "Whether you're just AI-curious or running a company that needs to move faster, this is where Mobile figures it out together — meetups, connections, and a short note now and then on using AI in the real world.",
-  button: "Get meetup invites + AI notes →",
+  button: "Get meetup invites + AI notes",
   consent: "We'll only email you about meetups and practical AI.",
   success: {
     heading: "You're in.",
@@ -127,7 +127,7 @@ export const OTHER_MEETUPS = {
 export const CONTACT = {
   heading: "Bring us your bottleneck.",
   body: "Tell us what you're trying to do with AI. We'll come back within 48 hours with a real, useful response — no pitch.",
-  button: "Send it →",
+  button: "Send it",
   note: "We'll send initial analysis via email — no call required.",
   success: {
     heading: "Got it.",

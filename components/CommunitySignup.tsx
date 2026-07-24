@@ -127,9 +127,16 @@ export default function CommunitySignup() {
               <button
                 type="submit"
                 disabled={status === "submitting"}
-                className="w-full rounded-lg bg-accent px-6 py-3.5 font-semibold text-white transition-colors hover:bg-accent-deep disabled:opacity-60"
+                className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent px-4 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-accent-deep disabled:opacity-60 sm:px-6 sm:text-base"
               >
-                {status === "submitting" ? "Joining…" : COMMUNITY.button}
+                {status === "submitting" ? (
+                  "Joining…"
+                ) : (
+                  <>
+                    {COMMUNITY.button}
+                    <span aria-hidden>→</span>
+                  </>
+                )}
               </button>
 
               <p className="text-center text-xs text-muted">
