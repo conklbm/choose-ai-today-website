@@ -31,7 +31,7 @@ export const HERO = {
   headline: "AI is now a non-negotiable.",
   subhead:
     "A local community for founders, teams, and the curious — plus hands-on help when your business is ready to put AI to work. Come to a meetup. Bring your team.",
-  cta: "Get meetup invites + AI notes →",
+  cta: "Get meetup invites + AI notes",
 };
 
 export const COMMUNITY = {

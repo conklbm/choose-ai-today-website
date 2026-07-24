@@ -38,3 +38,47 @@ body {
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
 }
+
+/* Hero motion — only for users who haven't asked to reduce motion.
+   Defaults (outside the query) keep everything fully visible and still,
+   so reduced-motion users and no-JS get the final state immediately. */
+@media (prefers-reduced-motion: no-preference) {
+  /* One-time staggered entrance for the hero hook.
+     `both` fill (not a hardcoded opacity:0) means that if animations ever
+     don't run, elements fall back to their default visible state rather
+     than being stuck invisible. */
+  .hero-rise {
+    animation: heroRise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .hero-rise-1 { animation-delay: 0.05s; }
+  .hero-rise-2 { animation-delay: 0.15s; }
+  .hero-rise-3 { animation-delay: 0.28s; }
+  .hero-rise-4 { animation-delay: 0.42s; }
+
+  /* Gentle continuous beckon on the CTA's arrow */
+  .cta-arrow {
+    display: inline-block;
+    animation: ctaNudge 1.8s ease-in-out infinite;
+  }
+}
+
+@keyframes heroRise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ctaNudge {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
