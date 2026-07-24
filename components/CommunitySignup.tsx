@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { COMMUNITY, MEETUP_URL } from "@/lib/copy";
 import { trackConversion } from "@/lib/analytics";
+import ArrowRight from "./ArrowRight";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -133,8 +134,8 @@ export default function CommunitySignup() {
                   "Joining…"
                 ) : (
                   <>
+                    <ArrowRight className="cta-arrow" />
                     {COMMUNITY.button}
-                    <span aria-hidden>→</span>
                   </>
                 )}
               </button>
