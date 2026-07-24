@@ -23,7 +23,7 @@ export const NAV = {
     { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
   ],
-  cta: "Join the community →",
+  cta: "Join the community",
 };
 
 export const HERO = {
@@ -50,7 +50,7 @@ export const COMMUNITY = {
   success: {
     heading: "You're in.",
     body: "Watch your inbox for the next meetup invite.",
-    meetupLinkLabel: "See upcoming meetups →",
+    meetupLinkLabel: "See upcoming meetups",
   },
 };
 
@@ -80,8 +80,8 @@ export const SERVICES = {
   softCta: {
     lead: "Not sure where to start?",
     actions: [
-      { label: "Come to a meetup first →", href: "#community" },
-      { label: "Tell us your situation →", href: "#contact" },
+      { label: "Come to a meetup first", href: "#community" },
+      { label: "Tell us your situation", href: "#contact" },
     ],
   },
 };
@@ -115,10 +115,10 @@ export const OTHER_MEETUPS = {
       schedule: "1st Friday in Fairhope · last Friday of the month in Mobile",
       links: [
         {
-          label: "Join on Meetup →",
+          label: "Join on Meetup",
           href: "https://www.meetup.com/lower-alabama-ai-meetup/",
         },
-        { label: "Discord →", href: "https://discord.gg/a57wzV3jTE" },
+        { label: "Discord", href: "https://discord.gg/a57wzV3jTE" },
       ],
     },
   ],

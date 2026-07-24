@@ -3,6 +3,7 @@
 import { FormEvent, useState } from "react";
 import { CONTACT } from "@/lib/copy";
 import { trackConversion } from "@/lib/analytics";
+import ArrowRight from "./ArrowRight";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -178,8 +179,8 @@ export default function ContactForm() {
                     "Sending…"
                   ) : (
                     <>
+                      <ArrowRight />
                       {CONTACT.button}
-                      <span aria-hidden>→</span>
                     </>
                   )}
                 </button>

@@ -1,4 +1,5 @@
 import { BRIDGE, SERVICES } from "@/lib/copy";
+import ArrowRight from "./ArrowRight";
 
 export default function Services() {
   return (
@@ -32,8 +33,9 @@ export default function Services() {
               <a
                 key={a.href}
                 href={a.href}
-                className="rounded-lg border-2 border-accent px-5 py-2.5 font-semibold text-accent transition-colors hover:bg-accent hover:text-white"
+                className="inline-flex items-center gap-2 rounded-lg border-2 border-accent px-5 py-2.5 font-semibold text-accent transition-colors hover:bg-accent hover:text-white"
               >
+                <ArrowRight />
                 {a.label}
               </a>
             ))}

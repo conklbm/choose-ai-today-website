@@ -1,4 +1,5 @@
 import { OTHER_MEETUPS } from "@/lib/copy";
+import ArrowRight from "./ArrowRight";
 
 export default function OtherMeetups() {
   return (
@@ -26,8 +27,9 @@ export default function OtherMeetups() {
                     href={l.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-semibold text-accent underline-offset-4 hover:underline"
+                    className="inline-flex items-center gap-1.5 font-semibold text-accent underline-offset-4 hover:underline"
                   >
+                    <ArrowRight />
                     {l.label}
                   </a>
                 ))}

@@ -48,8 +48,9 @@ export default function CommunitySignup() {
             {MEETUP_URL && (
               <a
                 href={MEETUP_URL}
-                className="mt-6 inline-block rounded-lg bg-accent px-6 py-3 font-semibold text-white transition-colors hover:bg-accent-deep"
+                className="mt-6 inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-semibold text-white transition-colors hover:bg-accent-deep"
               >
+                <ArrowRight />
                 {COMMUNITY.success.meetupLinkLabel}
               </a>
             )}

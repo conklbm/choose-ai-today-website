@@ -4,6 +4,7 @@ import { useState } from "react";
 import { NAV, SITE } from "@/lib/copy";
 import LogoMark from "./LogoMark";
 import HomeLink from "./HomeLink";
+import ArrowRight from "./ArrowRight";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -31,8 +32,9 @@ export default function Nav() {
           ))}
           <a
             href="#community"
-            className="rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-deep"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-deep"
           >
+            <ArrowRight />
             {NAV.cta}
           </a>
         </div>
@@ -77,8 +79,9 @@ export default function Nav() {
           <a
             href="#community"
             onClick={() => setOpen(false)}
-            className="mt-2 block rounded-lg bg-accent px-4 py-3 text-center text-base font-semibold text-white"
+            className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-accent px-4 py-3 text-base font-semibold text-white"
           >
+            <ArrowRight />
             {NAV.cta}
           </a>
         </div>

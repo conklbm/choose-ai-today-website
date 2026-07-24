@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ABOUT } from "@/lib/copy";
+import ArrowRight from "./ArrowRight";
 
 export default function About() {
   return (
@@ -28,9 +29,10 @@ export default function About() {
               href={p.link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block font-semibold text-accent underline-offset-4 hover:underline"
+              className="mt-4 inline-flex items-center gap-1.5 font-semibold text-accent underline-offset-4 hover:underline"
             >
-              {p.link.label} →
+              <ArrowRight />
+              {p.link.label}
             </a>
           </div>
         ))}
