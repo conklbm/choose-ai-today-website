@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import HomeLink from "@/components/HomeLink";
 import Footer from "@/components/Footer";
 import LogoMark from "@/components/LogoMark";
 import { SITE } from "@/lib/copy";
@@ -16,13 +16,10 @@ export default function PrivacyPage() {
     <>
       <header className="border-b border-ink/10">
         <div className="mx-auto flex h-16 max-w-3xl items-center px-4 sm:px-6">
-          <Link
-            href="/"
-            className="font-display flex items-center gap-2 text-lg font-extrabold"
-          >
+          <HomeLink className="font-display flex items-center gap-2 text-lg font-extrabold">
             <LogoMark className="h-7 w-7" />
             {SITE.name}
-          </Link>
+          </HomeLink>
         </div>
       </header>
       <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">

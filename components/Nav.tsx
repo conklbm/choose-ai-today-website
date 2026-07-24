@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { NAV, SITE } from "@/lib/copy";
 import LogoMark from "./LogoMark";
+import HomeLink from "./HomeLink";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -14,13 +14,10 @@ export default function Nav() {
         aria-label="Main"
         className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6"
       >
-        <Link
-          href="/"
-          className="font-display flex items-center gap-2 text-lg font-extrabold tracking-tight"
-        >
+        <HomeLink className="font-display flex items-center gap-2 text-lg font-extrabold tracking-tight">
           <LogoMark className="h-7 w-7" />
           {SITE.name}
-        </Link>
+        </HomeLink>
 
         <div className="hidden items-center gap-6 md:flex">
           {NAV.links.map((l) => (

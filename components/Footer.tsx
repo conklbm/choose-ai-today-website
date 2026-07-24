@@ -1,18 +1,16 @@
 import Link from "next/link";
 import { FOOTER, SITE } from "@/lib/copy";
 import LogoMark from "./LogoMark";
+import HomeLink from "./HomeLink";
 
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-navy text-slate-soft">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-10 text-sm sm:flex-row sm:justify-between sm:px-6">
-        <Link
-          href="/"
-          className="font-display flex items-center gap-2 font-bold text-white transition-colors hover:text-slate-soft"
-        >
+        <HomeLink className="font-display flex items-center gap-2 font-bold text-white transition-colors hover:text-slate-soft">
           <LogoMark className="h-6 w-6" />
           {SITE.name}
-        </Link>
+        </HomeLink>
         <p>
           © {new Date().getFullYear()} {SITE.name}
         </p>
