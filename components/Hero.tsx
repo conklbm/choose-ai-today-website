@@ -17,10 +17,10 @@ export default function Hero() {
           href="#community"
           className="hero-rise hero-rise-4 group mt-8 inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-white transition-colors hover:bg-accent-deep"
         >
-          {HERO.cta}
           <span aria-hidden className="cta-arrow">
             →
           </span>
+          {HERO.cta}
         </a>
         <p className="mt-6 flex items-center gap-2 text-sm italic text-slate-soft">
           <span
