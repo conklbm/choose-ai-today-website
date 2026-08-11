@@ -81,7 +81,7 @@ export const COMMUNITY = {
 };
 
 export const BRIDGE =
-  "Some businesses want to move faster than a twice-a-month meetup allows. We can get hands-on to help your company speed up adoption.";
+  "Some businesses want to move faster than a monthly meetup allows. We can get hands-on to help your company speed up adoption.";
 
 export const SERVICES = {
   heading: "When you're ready to go further",
@@ -138,7 +138,8 @@ export const OTHER_MEETUPS = {
   groups: [
     {
       name: "Lower Alabama AI (LAAI)",
-      schedule: "1st Friday in Fairhope · last Friday of the month in Mobile",
+      schedule:
+        "1st Friday in Fairhope · last Friday in Mobile (Innovation Portal, 3:30 – 5:00 PM)",
       note: "We present during the second half of the Mobile meetup.",
       links: [
         {
