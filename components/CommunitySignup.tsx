@@ -194,6 +194,35 @@ export default function CommunitySignup() {
       </div>
 
       <figure className="mx-auto mt-6 max-w-2xl">
+        <a
+          href={COMMUNITY.venue.mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
+          <Image
+            src={COMMUNITY.venue.src}
+            alt={COMMUNITY.venue.alt}
+            width={COMMUNITY.venue.width}
+            height={COMMUNITY.venue.height}
+            sizes="(max-width: 704px) 100vw, 672px"
+            className="w-full rounded-2xl border border-ink/10 object-cover"
+          />
+        </a>
+        <figcaption className="mt-2 text-center text-xs text-muted">
+          {COMMUNITY.venue.caption} ·{" "}
+          <a
+            href={COMMUNITY.venue.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-accent hover:underline"
+          >
+            {COMMUNITY.venue.directionsLabel}
+          </a>
+        </figcaption>
+      </figure>
+
+      <figure className="mx-auto mt-6 max-w-2xl">
         <Image
           src={COMMUNITY.photo.src}
           alt={COMMUNITY.photo.alt}

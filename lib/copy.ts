@@ -50,6 +50,16 @@ export const COMMUNITY = {
     location: "Innovation Portal, Downtown Mobile",
     note: "Free to attend.",
   },
+  venue: {
+    src: "/innovation-portal.jpg",
+    width: 755,
+    height: 235,
+    alt: "The Innovation Portal building in Downtown Mobile, where the meetups are held",
+    caption: "Innovation Portal · Downtown Mobile",
+    mapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=Innovation+Portal+Mobile+AL",
+    directionsLabel: "Get directions",
+  },
   // The reason to sign up even though the schedule is public: the list is
   // how you get reminders and a heads-up on any changes. (We don't publish
   // topics, so keep this general — reminders, not agendas.)
