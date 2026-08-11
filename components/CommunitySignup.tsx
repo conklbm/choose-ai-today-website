@@ -94,24 +94,55 @@ export default function CommunitySignup() {
             </h2>
             <p className="mt-4 leading-relaxed text-muted">{COMMUNITY.body}</p>
 
-            <div className="mt-6 rounded-xl border border-ink/10 bg-cream p-4 sm:p-5">
-              <ul className="space-y-2.5 text-sm">
-                <li className="flex items-start gap-3">
-                  <CalendarIcon />
-                  <span className="font-semibold text-ink">
-                    {COMMUNITY.event.cadence}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <ClockIcon />
-                  <span className="text-ink">{COMMUNITY.event.time}</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <PinIcon />
-                  <span className="text-ink">{COMMUNITY.event.location}</span>
-                </li>
-              </ul>
-              <p className="mt-3 text-sm text-muted">{COMMUNITY.event.note}</p>
+            <div className="mt-6 flex flex-col gap-4 rounded-xl border border-ink/10 bg-cream p-4 sm:flex-row sm:items-center sm:p-5">
+              <div className="sm:flex-1">
+                <ul className="space-y-2.5 text-sm">
+                  <li className="flex items-start gap-3">
+                    <CalendarIcon />
+                    <span className="font-semibold text-ink">
+                      {COMMUNITY.event.cadence}
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <ClockIcon />
+                    <span className="text-ink">{COMMUNITY.event.time}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <PinIcon />
+                    <span className="text-ink">
+                      {COMMUNITY.event.location}
+                    </span>
+                  </li>
+                </ul>
+                <p className="mt-3 text-sm text-muted">
+                  {COMMUNITY.event.note}{" "}
+                  <a
+                    href={COMMUNITY.venue.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-accent hover:underline"
+                  >
+                    {COMMUNITY.venue.directionsLabel}
+                  </a>
+                </p>
+              </div>
+
+              <a
+                href={COMMUNITY.venue.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Innovation Portal on Google Maps"
+                className="block shrink-0 overflow-hidden rounded-lg sm:w-40"
+              >
+                <Image
+                  src={COMMUNITY.venue.src}
+                  alt={COMMUNITY.venue.alt}
+                  width={COMMUNITY.venue.width}
+                  height={COMMUNITY.venue.height}
+                  sizes="(max-width: 640px) 100vw, 160px"
+                  className="h-28 w-full object-cover transition-transform hover:scale-105 sm:h-24"
+                />
+              </a>
             </div>
 
             <p className="mt-5 font-medium text-ink">{COMMUNITY.hook}</p>
@@ -192,35 +223,6 @@ export default function CommunitySignup() {
           </>
         )}
       </div>
-
-      <figure className="mx-auto mt-6 max-w-2xl">
-        <a
-          href={COMMUNITY.venue.mapsUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block"
-        >
-          <Image
-            src={COMMUNITY.venue.src}
-            alt={COMMUNITY.venue.alt}
-            width={COMMUNITY.venue.width}
-            height={COMMUNITY.venue.height}
-            sizes="(max-width: 704px) 100vw, 672px"
-            className="w-full rounded-2xl border border-ink/10 object-cover"
-          />
-        </a>
-        <figcaption className="mt-2 text-center text-xs text-muted">
-          {COMMUNITY.venue.caption} ·{" "}
-          <a
-            href={COMMUNITY.venue.mapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold text-accent hover:underline"
-          >
-            {COMMUNITY.venue.directionsLabel}
-          </a>
-        </figcaption>
-      </figure>
 
       <figure className="mx-auto mt-6 max-w-2xl">
         <Image

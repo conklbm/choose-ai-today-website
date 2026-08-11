@@ -51,13 +51,12 @@ export const COMMUNITY = {
     note: "Free to attend.",
   },
   venue: {
-    src: "/innovation-portal.jpg",
-    width: 755,
-    height: 235,
+    src: "/innovation-portal-entrance.jpg",
+    width: 300,
+    height: 220,
     alt: "The Innovation Portal building in Downtown Mobile, where the meetups are held",
-    caption: "Innovation Portal · Downtown Mobile",
     mapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Innovation+Portal+Mobile+AL",
+      "https://www.google.com/maps/search/?api=1&query=Innovation+Portal%2C+358+St+Louis+St%2C+Mobile%2C+AL+36602",
     directionsLabel: "Get directions",
   },
   // The reason to sign up even though the schedule is public: the list is
