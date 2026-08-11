@@ -8,6 +8,38 @@ import ArrowRight from "./ArrowRight";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
+const iconProps = {
+  width: 18,
+  height: 18,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 2,
+  strokeLinecap: "round" as const,
+  strokeLinejoin: "round" as const,
+  className: "mt-0.5 shrink-0 text-accent",
+  "aria-hidden": true,
+};
+
+const CalendarIcon = () => (
+  <svg {...iconProps}>
+    <rect x="3" y="4" width="18" height="18" rx="2" />
+    <path d="M16 2v4M8 2v4M3 10h18" />
+  </svg>
+);
+const ClockIcon = () => (
+  <svg {...iconProps}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M12 7v5l3 2" />
+  </svg>
+);
+const PinIcon = () => (
+  <svg {...iconProps}>
+    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+    <circle cx="12" cy="10" r="3" />
+  </svg>
+);
+
 export default function CommunitySignup() {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState("");
@@ -60,17 +92,29 @@ export default function CommunitySignup() {
             <h2 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
               {COMMUNITY.heading}
             </h2>
-            <ul className="mt-4 flex flex-wrap gap-2">
-              {COMMUNITY.facts.map((f) => (
-                <li
-                  key={f}
-                  className="rounded-full border border-accent/30 bg-accent/5 px-3.5 py-1 text-sm font-semibold text-accent"
-                >
-                  {f}
-                </li>
-              ))}
-            </ul>
             <p className="mt-4 leading-relaxed text-muted">{COMMUNITY.body}</p>
+
+            <div className="mt-6 rounded-xl border border-ink/10 bg-cream p-4 sm:p-5">
+              <ul className="space-y-2.5 text-sm">
+                <li className="flex items-start gap-3">
+                  <CalendarIcon />
+                  <span className="font-semibold text-ink">
+                    {COMMUNITY.event.cadence}
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <ClockIcon />
+                  <span className="text-ink">{COMMUNITY.event.time}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <PinIcon />
+                  <span className="text-ink">{COMMUNITY.event.location}</span>
+                </li>
+              </ul>
+              <p className="mt-3 text-sm text-muted">{COMMUNITY.event.note}</p>
+            </div>
+
+            <p className="mt-5 font-medium text-ink">{COMMUNITY.hook}</p>
 
             <form onSubmit={onSubmit} className="mt-8 space-y-4">
               {/* Honeypot — hidden from real users, bots fill it */}

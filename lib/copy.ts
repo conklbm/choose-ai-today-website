@@ -36,7 +36,6 @@ export const HERO = {
 
 export const COMMUNITY = {
   heading: "You belong here.",
-  facts: ["Monthly", "In person", "Free"],
   photo: {
     src: "/ai-meetup.jpg",
     width: 1231,
@@ -45,6 +44,15 @@ export const COMMUNITY = {
     caption: "Paul leading a recent AI meetup in Mobile.",
   },
   body: "Whether you're just AI-curious or running a company that needs to move faster, this is where Mobile figures it out together — meetups, connections, and a short note now and then on using AI in the real world.",
+  event: {
+    cadence: "2nd & 4th Friday each month",
+    time: "3:30 – 5:00 PM",
+    location: "Innovation Portal, Downtown Mobile",
+    note: "Free to attend.",
+  },
+  // The reason to sign up even though the schedule is public: the list is
+  // how you get reminders, the topic, and confirmation it's on.
+  hook: "Sign up and we'll remind you before each meetup — plus what we're covering and any changes.",
   button: "Get meetup invites + AI notes",
   consent: "We'll only email you about meetups and practical AI.",
   success: {
@@ -55,7 +63,7 @@ export const COMMUNITY = {
 };
 
 export const BRIDGE =
-  "Some businesses want to move faster than a monthly meetup allows. We can get hands-on to help your company speed up adoption.";
+  "Some businesses want to move faster than a twice-a-month meetup allows. We can get hands-on to help your company speed up adoption.";
 
 export const SERVICES = {
   heading: "When you're ready to go further",
