@@ -145,6 +145,17 @@ export default function CommunitySignup() {
               </a>
             </div>
 
+            <p className="mt-4 text-sm text-muted">
+              {COMMUNITY.laai.lead}{" "}
+              <a
+                href={COMMUNITY.laai.href}
+                className="font-semibold text-accent hover:underline"
+              >
+                {COMMUNITY.laai.linkLabel}
+              </a>{" "}
+              {COMMUNITY.laai.tail}
+            </p>
+
             <p className="mt-5 font-medium text-ink">{COMMUNITY.hook}</p>
 
             <form onSubmit={onSubmit} className="mt-8 space-y-4">

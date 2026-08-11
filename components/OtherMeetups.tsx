@@ -20,6 +20,9 @@ export default function OtherMeetups() {
             >
               <h3 className="font-display text-xl font-bold">{g.name}</h3>
               <p className="mt-2 text-muted">{g.schedule}</p>
+              {g.note && (
+                <p className="mt-1 text-sm font-medium text-accent">{g.note}</p>
+              )}
               <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
                 {g.links.map((l) => (
                   <a

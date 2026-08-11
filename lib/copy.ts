@@ -45,10 +45,18 @@ export const COMMUNITY = {
   },
   body: "For beginners and pros alike — people building software, automating workflows, or just curious about all of it. Each meetup starts with a short share, then opens up: news and ideas, building together, questions, and hanging out.",
   event: {
-    cadence: "2nd & 4th Friday each month",
+    cadence: "2nd Friday each month",
     time: "3:30 – 5:00 PM",
     location: "Innovation Portal, Downtown Mobile",
     note: "Free to attend.",
+  },
+  // The last-Friday session is LAAI's meetup — we present in its second half.
+  // Point to LAAI's own listing rather than restate their time/venue.
+  laai: {
+    lead: "On the last Friday, we join the",
+    linkLabel: "Lower Alabama AI meetup",
+    href: "#meetups",
+    tail: "and present during the second half.",
   },
   venue: {
     src: "/innovation-portal-entrance.jpg",
@@ -131,6 +139,7 @@ export const OTHER_MEETUPS = {
     {
       name: "Lower Alabama AI (LAAI)",
       schedule: "1st Friday in Fairhope · last Friday of the month in Mobile",
+      note: "We present during the second half of the Mobile meetup.",
       links: [
         {
           label: "Join on Meetup",
