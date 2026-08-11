@@ -43,7 +43,7 @@ export const COMMUNITY = {
     alt: "A full room at a recent AI meetup in Mobile, with Paul presenting",
     caption: "Paul leading a recent AI meetup in Mobile.",
   },
-  body: "Whether you're just AI-curious or running a company that needs to move faster, this is where Mobile figures it out together — meetups, connections, and a short note now and then on using AI in the real world.",
+  body: "For beginners and pros alike — people building software, automating workflows, or just curious about all of it. Each meetup starts with a short share, then opens up: news and ideas, building together, questions, and hanging out.",
   event: {
     cadence: "2nd & 4th Friday each month",
     time: "3:30 – 5:00 PM",
@@ -51,8 +51,9 @@ export const COMMUNITY = {
     note: "Free to attend.",
   },
   // The reason to sign up even though the schedule is public: the list is
-  // how you get reminders, the topic, and confirmation it's on.
-  hook: "Sign up and we'll remind you before each meetup — plus what we're covering and any changes.",
+  // how you get reminders and a heads-up on any changes. (We don't publish
+  // topics, so keep this general — reminders, not agendas.)
+  hook: "Sign up and we'll remind you before each meetup — and flag anything that changes.",
   button: "Get meetup invites + AI notes",
   consent: "We'll only email you about meetups and practical AI.",
   success: {
